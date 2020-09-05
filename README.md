@@ -1,2 +1,3 @@
 # INREMDN
-Esto es una prueba
+
+Repositorio para los grupos medianos de medicina 2020-21
