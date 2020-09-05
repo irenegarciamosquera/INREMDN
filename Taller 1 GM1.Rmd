@@ -1,0 +1,8 @@
+---
+title: "Taller 1 GM1"
+output: pdf_document
+---
+
+## Ejercicio 1
+
+En este ejercicio vamos a analizar algunos datos publicados del artículo “Síndrome de Burnouten estudiantes de seis facultades de medicina [. . . ]” de F. T. Serranoet al(podéis consultar el textocompleto en Campus Extens). Para situaros, conviene que leáis el Resumen y la Introducción delartículo antes de continuar.
