@@ -13,6 +13,8 @@ output:
 ```{r setup, include=FALSE}
 library(dygraphs)
 library(flexdashboard)
+library(shiny)
+library(shiny.collections)
 ```
 
 ---
@@ -22,51 +24,55 @@ output: flexdashboard::flex_dashboard
 
 Ejercicio 1
 ===================================== 
-   
-En este ejercicio vamos a analizar algunos datos publicados del artículo “Síndrome de Burnouten estudiantes de seis facultades de medicina [. . . ]” de F. T. Serranoet al(podéis consultar el textocompleto en Campus Extens). Para situaros, conviene que leáis el Resumen y la Introducción delartículo antes de continuar.
+  
+El resecado quirúrgico (surgical resection) es actualmente el único tratamiento con potencial de supervivencia a largo plazo y curación del cáncer de páncreas. Puede realizarse mediante cirugía laparoscópica o abierta. En operaciones de otros órganos, se ha demostrado que la cirugía laparoscópica reduce las complicaciones y la duración de la estancia hospitalaria en comparación con la cirugía abierta. Sin embargo, siguen existiendo preocupaciones sobre la seguridad de la laparoscópica^[Riviere y otros, 2016 https://doi.org/10.1002/14651858.CD011391.pub2].
 
-### Apartado A
+María es una paciente de 70 años con cáncer de páncreas y nos pregunta si es una mejor opción para ella el extirpado por laparoscopia. 
 
-¿Cuál es la población objetivo?
+Plantead el problema que se os presenta en formato **PICO**.
 
-
-
-### Apartado B
-
-¿Qué tipo de estudio es?
-
-
+*Mi respuesta sería: 
+ + Paciente: adulto mayor a 65 años con cáncer pancreático resecable.
+ 
+ + Intervención:  pancreatocmía distal laparoscópica  y  pancreactomía distal abierta.
+ 
+ + Comparación: pancreactomía subtotal distal 
+ 
+ + Resultados: evento adverso grave, recurrencia de la enfermedad, fístula pancreática y muerte en ambos procedimientos
+ 
+ 
 Ejercicio 2
 =====================================     
 
-Row
--------------------------------------
     
 ### Apartado A
 
 
 
 
-Row
--------------------------------------
+
     
 ### Apartado B
 
 ```{r}
-library(shiny)
-library(shiny.collections)
 
 ui <- shinyUI(fluidPage(
-  titlePanel("Respuestas"),
+  titlePanel("Respuestas que vais a enviar"),
   div(textInput("username_field", "Nombres y Apellidos", width = "500px")),
   uiOutput("chatbox"),
   div(style = "display:inline-block",
-      textInput("message_field", "Respuesta 1- Apartado A", width = "500px")),
+      textInput("message_field", "Respuesta Ej.1", width = "800px")),
   div(style = "display:inline-block",
-      actionButton("send", "Send"))
-))
+      actionButton("send", "Send")),
+  
+  div(style = "display:inline-block",
+      textInput("message_field", "Respuesta Ej.2A", width = "800px")),
+  div(style = "display:inline-block",
+      actionButton("send", "Send")),
+  ))
 
 server <- shinyServer( function(input, output, session) {})
+
 shinyApp(ui = ui, server = server)
 ```
 
@@ -96,7 +102,4 @@ install.packages('rethinker')
  y 
  
  https://www.r-bloggers.com/create-outstanding-dashboards-with-the-new-semantic-dashboard-package-3/
- 
- 
- 
  
