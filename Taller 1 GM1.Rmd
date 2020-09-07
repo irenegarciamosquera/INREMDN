@@ -52,5 +52,51 @@ Row
     
 ### Apartado B
 
+```{r}
+library(shiny)
+library(shiny.collections)
+
+ui <- shinyUI(fluidPage(
+  titlePanel("Respuestas"),
+  div(textInput("username_field", "Nombres y Apellidos", width = "500px")),
+  uiOutput("chatbox"),
+  div(style = "display:inline-block",
+      textInput("message_field", "Respuesta 1- Apartado A", width = "500px")),
+  div(style = "display:inline-block",
+      actionButton("send", "Send"))
+))
+
+server <- shinyServer( function(input, output, session) {})
+shinyApp(ui = ui, server = server)
+```
 
 
+Ejercicio 3
+=====================================  
+
+Para asegurarnos que guardamos las respuestas en una base de datos. Se supone que con RethinkDB debería ser fácil.
+
+ https://github.com/mbq/rethinker/blob/master/README.md
+ 
+ Luego de tener RethinkDB  (desde el CRAN)
+ 
+install.packages('rethinker')
+
+ 
+ Para compilar desde el código se usa la compilación estándar de R o devtools. Para las pruebas, usar devtools::test().
+ 
+ Leer con cuidado 
+ 
+ https://appsilon.com/shiny-chat-in-few-lines-of-code/
+ 
+ Otra idea es crear cuestionarios en R, parecidos a Google Form:
+ 
+ https://github.com/daattali/shinyforms
+ 
+ y 
+ 
+ https://www.r-bloggers.com/create-outstanding-dashboards-with-the-new-semantic-dashboard-package-3/
+ 
+ 
+ 
+ 
