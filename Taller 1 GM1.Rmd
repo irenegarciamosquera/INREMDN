@@ -25,7 +25,7 @@ output: flexdashboard::flex_dashboard
 Ejercicio 1
 ===================================== 
   
-El resecado quirúrgico (surgical resection) es actualmente el único tratamiento con potencial de supervivencia a largo plazo y curación del cáncer de páncreas. Puede realizarse mediante cirugía laparoscópica o abierta. En operaciones de otros órganos, se ha demostrado que la cirugía laparoscópica reduce las complicaciones y la duración de la estancia hospitalaria en comparación con la cirugía abierta. Sin embargo, siguen existiendo preocupaciones sobre la seguridad de la laparoscópica^[Riviere y otros, 2016 https://doi.org/10.1002/14651858.CD011391.pub2].
+El dbejehdke resecado quirúrgico (surgical resection) es actualmente el único tratamiento con potencial de supervivencia a largo plazo y curación del cáncer de páncreas. Puede realizarse mediante cirugía laparoscópica o abierta. En operaciones de otros órganos, se ha demostrado que la cirugía laparoscópica reduce las complicaciones y la duración de la estancia hospitalaria en comparación con la cirugía abierta. Sin embargo, siguen existiendo preocupaciones sobre la seguridad de la laparoscópica^[Riviere y otros, 2016 https://doi.org/10.1002/14651858.CD011391.pub2].
 
 María es una paciente de 70 años con cáncer de páncreas y nos pregunta si es una mejor opción para ella el extirpado por laparoscopia. 
 
